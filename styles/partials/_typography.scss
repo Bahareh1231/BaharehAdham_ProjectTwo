@@ -1,0 +1,94 @@
+html {
+    font-size: 18px;
+}
+
+// headers
+
+h1 {
+    @include font(2.9rem, $headFont, uppercase);
+   
+}
+
+ul { 
+    list-style: none;
+}
+
+.list a  {
+    @include font(1rem, $headFont, uppercase);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+h3 {
+    @include font(1.3rem, $headFont, uppercase);
+}
+
+h2 {
+    @include font(2rem, $headFont, uppercase);
+}
+
+.tag__text {
+    @include font(1rem, $headFont, uppercase);
+    letter-spacing: 2px;
+
+}
+
+// sizes
+
+.text--large {
+    font-size:1.2rem;
+}
+
+.text--medium {
+    font-size: 1rem;
+}
+
+.text--small {
+    font-size: 0.9rem;
+}
+
+.text--tiny {
+    font-size: 0.7rem;
+}
+
+// colors
+
+.text--white {
+    color: $white;
+}
+
+.text--black {
+    color: $black;
+}
+
+.text--red {
+    color: $red;
+}
+
+.text--grey {
+    color: $grey;
+}
+
+.text--darkGrey {
+    color: $darkGrey;
+}
+
+// font family
+
+p {
+    font-family: $textFont;
+}
+
+.text--headFont {
+    font-family: $headFont;
+}
+
+.text--bold {
+    font-weight: 700;
+}
+
+// others
+
+.tag {
+    border-radius: 500px;
+}
