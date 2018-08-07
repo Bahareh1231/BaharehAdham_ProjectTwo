@@ -1,0 +1,19 @@
+.welcome {
+    background-color: $yellow;
+    display: flex;
+    text-align: center;
+    padding-bottom: 72px;
+    .welcome__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            margin-bottom: 5%;
+        }
+        .tag {
+            background: black;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

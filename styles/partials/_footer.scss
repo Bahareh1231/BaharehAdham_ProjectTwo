@@ -1,0 +1,122 @@
+footer {
+    background-color: $black;
+    padding: 5% 0;
+    display: flex;
+    .footer__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    i {
+        margin-right: 10px;
+    }
+    .footer__icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: $grey;
+        }
+    }
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    .footer__contact {
+        width: calc(30% - 20px);
+        margin: 10px;
+        ul {
+            padding: 0;
+            line-height: 30px;
+        }
+        a {
+            text-decoration: none;
+        }
+        form {
+            position: relative;
+            input {
+                background-color: $black;
+                color: white;
+                font-family: $textFont;
+                border: 1px $white solid;
+                padding: 10px;
+
+            }
+            &:focus-within {
+                border: 3px $white solid;
+            }
+            button {
+                background-color: $black;
+                border: none;
+                position: absolute;
+                left: 147px;
+                top: 13px;
+                padding: 0;
+            }  
+        }
+    }
+    .footer__instagram  {
+        width: calc(35% - 20px);
+        margin: 10px;
+        img {
+        margin: 5px;
+        }
+    }
+    .footer__about {
+        width: calc(35% - 20px);
+        margin: 10px;
+    }
+}
+
+
+
+
+
+.nav__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+}
+
+.footer__end {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 1080px) {
+    .footer__row {
+        justify-content: center;
+        .footer__contact {
+            width: calc(50% - 20px);
+            margin: 10px;
+        }
+
+        .footer__about {
+            width: calc(50% - 20px);
+            margin: 10px;
+            text-align: right;
+        }
+
+        .footer__instagram {
+            width: 60%;
+            margin: 10px;
+            text-align: center;
+            img {
+                margin: 3px;
+            }
+        }
+    }
+}
+

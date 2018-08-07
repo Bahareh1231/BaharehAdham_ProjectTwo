@@ -12,14 +12,14 @@
 </head>
 <body>
 
-    <div class="wrapper">
+    
 
     <!-- HEADER SECTION -->
 
-        <header class="headerWrapper">
-            <nav class="header"> <!-- navigation section -->
+        <header>
+            <div class="wrapper"> <!-- navigation section -->
                 <!-- logo and navigation -->
-                <div class="header__nav">
+                <nav class="header__nav">
                     <div class="logo logo__nav text--white"><h2>restaurant</h2></div>
                     <ul class="nav__list text--white">
                         <li class="list"><a href="" class="text--white">menu</a></li>
@@ -28,7 +28,7 @@
                         <li class="list"><a href="" class="text--white">contact</a></li>
                         <li class="list"><a href="" class="text--white">about us</a></li>
                     </ul>
-                </div>
+                </nav>
 
             <!-- title area -->
                 <div class="header__title text--white">
@@ -38,135 +38,150 @@
                         <p class="tag__text"><a href="">start</a></p>
                     </div>
                 </div> <!-- end of the title div -->
-            </nav>
+            </div>
         </header>
         
         <main>
 
     <!-- ABOUT SECTION -->
             <section class="about">
-                <h2 class="subheaders text--black">We are...</h2>
+                <div class="wrapper">
+                    <h2 class="subheaders text--black">We are...</h2>
+                    
+                    <div class="about__content">
+                    <!-- left side gallery -->
+                        <div class="about__gallery">
+                            <!-- top two pictures -->
+                            <div class="--top">
+                                <div class="about__picture">
+                                    <figure>
+                                        <img src="assets/image-2.jpeg" alt="plate of vegetables and eggs"></figure>
+                                    <h3 class="h3--black">local</h3>
+                                    <figure>
+                                </div>
+                            
+                                <div class="about__picture">
+                                        <img src="assets/image-3.jpeg" alt="cinnanom being sifted into a flour mixture"></figure>
+                                    <h3 class="h3--black">modern</h3>
+                                    <figure>
+                                </div>
+                            </div>
+                            <!-- bottom two pictures -->
+                            <div class="--bottom">
+                                <div class="about__picture">
+                                    <figure>
+                                        <img src="assets/image-4.jpeg" alt="barista making espresso"></figure>
+                                    <h3 class="h3--black">friendly</h3>
+                                </div>   
+                                <div class="about__picture">
+                                        <img src="assets/image-5.jpeg" alt="a stack of pancakes covered in fruit"></figure>
+                                    <h3 class="h3--black">delicious</h3>
+                                </div>
+                            </div>
+                        </div> <!-- end of aboutGallery -->
 
-                <!-- left side gallery -->
-                <div class="about__gallery">
-                    <div class="about__picture">
-                        <figure>
-                            <img src="assets/image-2.jpeg" alt="plate of vegetables and eggs"></figure>
-                        <h3 class="h3--black">local</h3>
-                        <figure>
-                    </div>
-                    <div class="about__picture">
-                            <img src="assets/image-3.jpeg" alt="cinnanom being sifted into a flour mixture"></figure>
-                        <h3 class="h3--black">modern</h3>
-                        <figure>
-                    </div>
-                    <div class="about__picture">
-                            <img src="assets/image-4.jpeg" alt="barista making espresso"></figure>
-                        <h3 class="h3--black">friendly</h3>
-                        <figure>
-                    <div class="about__picture">
-                            <img src="assets/image-5.jpeg" alt="a stack of pancakes covered in fruit"></figure>
-                        <h3 class="h3--black">delicious</h3>
-                    </div>
-                </div> <!-- end of aboutGallery -->
-
-                <!-- right side text -->
-                <div class="about__text">
-                    <h3 class="h3--black">about us</h3>
-                    <p class="text--large text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                    <div class="tag tag__text tag--red">
-                        <p class="tag__text">more</p>
-                    </div>
-                </div> <!-- end of aboutText -->
+                        <!-- right side text -->
+                        <div class="about__text">
+                        <h3 class="h3--black">about us</h3>
+                        <p class="text--large text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                        <div class="tag tag__text tag--red">
+                            <p class="tag__text"><a href="">more</a></p>
+                        </div>
+                        </div> <!-- end of aboutText -->
+                    </div> <!-- end of about__content -->
+                </div>
             </section> <!-- end of about section -->
 
     <!-- WELCOME SECTION -->
             <section class="welcome">
-                <h2 class="subheaders text--black">welcome to restaurant</h2>
-                <p class="text--large text--black">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel
-                tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu
-                est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
-                <div class="tag tag__welcome tag--black">
-                    <p class="tag__text">view</p>
+                <div class="wrapper">
+                    <div class="welcome__content">
+                        <h2 class="subheaders  text--black">welcome to restaurant</h2>
+                        <p class="text--large text--black">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel
+                        tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu
+                        est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
+                        <div class="tag tag__welcome tag--black">
+                            <p class="tag__text">view</p>
+                        </div>
+                    </div>
                 </div>
             </section> <!-- end of welcome section -->
 
     <!-- SERVICES SECTION -->
             <section class="services">
-                <h2 class="subheaders text--black">services</h2>
-                <div class="servicesWrapper">
+                <div class="wrapper">
+                    <h2 class="subheaders  text--black">services</h2>
+                    <div class="services__content">
 
-                    <div class="servicesBlock servicesBlock__custom">
-                        <h3 class="h3--black">custom catering</h3>
-                        <p class="text--small text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud.</p>
-                    </div>
+                        <div class="servicesBlock servicesBlock__text">
+                            <h3 class="h3--black">custom catering</h3>
+                            <p class="text--small text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+    
+                        <img src="assets/image-6.jpeg" class="servicesBlock" alt="view of a restaurant's bar">
 
-                    <figure> 
-                        <img src="assets/image-6.jpeg" alt="view of a restaurant's bar">
-                    </figure>
+                        <img src="assets/image-7.jpeg" class="servicesBlock" alt="a plate of salmon and vegetables">
 
-                    <figure>
-                        <img src="assets/image-7.jpeg" alt="a plate of salmon and vegetables">
-                    </figure>
-
-                    <div class="servicesBlock servicesBlock__event">
-                        <h3 class="h3--black">event bookings</h3>
-                        <p class="text--small text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud.</p>
-                    </div>
-                </div> <!-- end of servicesWrapper -->
+                        <div class="servicesBlock servicesBlock__text">
+                            <h3 class="h3--black">event bookings</h3>
+                            <p class="text--small text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud.</p>
+                        </div>
+                    </div> <!-- end of servicesWrapper -->
+                </div>
             </section> <!-- end of welcome section -->
            
         <!-- REVIEWS SECTION -->
             <section class="reviews">
-                <h2 class="subheaders text--grey">reviews</h2>
-                <div class="reviews__picture">
-                    <div class="angle angle--left">  
-                        <i class="fas fa-angle-left"></i> <!-- angle on the left -->
+                <div class="wrapper">
+                    <h2 class="subheaders  text--grey">reviews</h2>
+                    <div class="reviews__content">
+                        <div class="reviews__picture">
+                            <div class="angle angle--left">  
+                                <a href=""><i class="fas fa-angle-left"></i></a> <!-- angle on the left -->
+                            </div>
+                            <figure>
+                                <img src="assets/image-8.jpeg" alt="thumbnail of reviewer">
+                            </figure>
+                            <div class="angle angle--right">
+                                <a href=""><i class="fas fa-angle-right"></i></a> <!-- angle on the right -->
+                            </div>
+                        </div> <!-- end of reviewsPic -->
+                    
+                        <div class="reviews__text">
+                            <p class="text--small text--grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim </p>
+                            <p class="italic text--small text--grey">~ J. Michels ~</p>
+                        </div>
                     </div>
-                    <figure>
-                        <img src="assets/image-8.jpeg" alt="thumbnail of reviewer">
-                    </figure>
-                    <div class="angle angle--right">
-                        <i class="fas fa-angle-right"></i> <!-- angle on the right -->
-                    </div>
-                </div> <!-- end of reviewsPic -->
-              
-                <div class="reviewsText">
-                    <p class="text--small text--grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim </p>
-                    <p class="italic text--small text--grey">~ J. Michels ~</p>
                 </div>
             </section> <!-- end of reviews section -->
             
         <!-- EVENTS SECTION -->
             <section class="events">
-                <h2 class="subheaders text--black">events</h2>
-                <div class="eventsGallery">
+                 <h2 class="subheaders  text--black">events</h2>
+                <div class="events__gallery">
 
-                    <div class="eventPic eventPic1"> <!-- first gallery image -->
-                        <div class="overlay">
-                            <h2 "subheaders subheaders--white">sample event</h2>
+                    <div class="events__pic events__pic1"> <!-- first gallery image -->
+                        <div class="events__overlay">
+                            <h2 class="text--white">sample event</h2>
                             <p class="text--small text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                         </div>
-                        <figure><img src="assets/image-9.jpeg" alt="plate of bugers with a side of chips"></figure>
                     </div>
                     
-                    <div class="eventPic eventPic2"> <!-- second gallery image -->
-                        <div class="overlay">
-                            <h2 "subheaders subheaders--white">sample event</h2>
+                    <div class="events__pic events__pic2"> <!-- second gallery image -->
+                        <div class="events__overlay">
+                            <h2 class="text--white">sample event</h2>
                             <p class="text--small text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                         </div>
-                        <figure><img src="assets/image-10.jpeg" alt="a bowl of oats and fruit"></figure>
                     </div>
                     
-                    <div class="eventPic eventPic3"> <!-- third gallery image -->
-                        <div class="overlay">
-                            <h2 "subheaders subheaders--white">sample event</h2>
+                    <div class="events__pic events__pic3"> <!-- third gallery image -->
+                        <div class="events__overlay">
+                            <h2 class="text--white">sample event</h2>
                             <p class="text--small text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                         </div>
-                        <figure><img src="assets/image-11.jpeg" alt="view of the inside of a restaurant kitchen"></figure>
                     </div>
                    
                 </div> <!-- end of eventsGallery -->
@@ -174,32 +189,40 @@
 
         <!-- QUESTION SECTION -->
             <section class="question">
-                <h2 class="subheaders">ask a question</h2>
-                <form action="">
-                    <textarea placeholder="Your Message" id="message">
-                    </textarea>
-                    <label for="message" class="visuallyhidden">your message</label>
-                    <button class="tag tag__button tag--red">send</button>
-                </form>
+                <div class="wrapper">
+                    <h2 class="subheaders">ask a question</h2>
+                    <form action="">
+                        <label for="message" class="visuallyhidden">your message</label>
+                        <input type="text" placeholder="Your Message" id="message">
+                        </input>
+                        <button class="tag tag__button tag__text">send</button>
+                    </form>
+                </div>
             </section> <!-- end of question section -->
     
         <!-- STATISTICS SECTION -->
             <section class="stats">
-                <div class="stats__block stats__block1">
-                    <p class="stats__number text--large text--bold text--headFont">16</p>
-                    <p class="stats__text text--black text--large">Years Open</p>
-                </div>
-                <div class="stats__block stats__block2">
-                    <p class="stats__number text--large text--bold text--headFont">180</p>
-                    <p class="stats__text text--black text--large">Happy Customers</p>
-                </div>
-                <div class="stats__block stats__block3">
-                    <p class="stats__number text--large text--bold text--headFont">12</p>
-                    <p class="stats__text text--black text--large">World Class Cooks</p>
-                </div>
-                <div class="stats__block stats__block4">
-                    <p class="stats__number text--large text--bold text--headFont">55</p>
-                    <p class="stats__text text--black text--large">Awards</p>
+                <div class="wrapper stats__content">
+                    <div class="stats__block">
+                        <i class="fas fa-check-square"></i>
+                        <p class="stats__number text--xlarge text--bold text--headFont">16</p>
+                        <p class="stats__text text--black text--large">Years Open</p>
+                    </div>
+                    <div class="stats__block">
+                        <i class="fas fa-smile"></i>
+                        <p class="stats__number text--xlarge text--bold text--headFont">180</p>
+                        <p class="stats__text text--black text--large">Happy Customers</p>
+                    </div>
+                    <div class="stats__block">
+                        <i class="fas fa-calendar"></i>
+                        <p class="stats__number text--xlarge text--bold text--headFont">12</p>
+                        <p class="stats__text text--black text--large">World Class Cooks</p>
+                    </div>
+                    <div class="stats__block">
+                        <i class="fas fa-trophy"></i>
+                        <p class="stats__number text--xlarge text--bold text--headFont">55</p>
+                        <p class="stats__text text--black text--large">Awards</p>
+                    </div>
                 </div>
             </section> <!-- end of stats section -->
 
@@ -207,22 +230,33 @@
             <section class="blog">
                 <h2 class="subheaders">our blog</h2>
 
-                <div class="blog__block blog__block1">
-                    <figure><img src="assets/image-12.jpeg" alt="plate of steak and asparagus"></figure>
-                    <p class="blog__name text--medium text--black text--bold text--headFont">Popular Steak Cuts</p>
-                    <p class="blog__more text--tiny text--red text--headFont">read more <i class="fas fa-angle-double-right"></i></p>
-                </div>
+                <div class="blogWrapper">
+                    <div class="blog__block">
+                        <figure><img src="assets/image-12.jpeg" alt="plate of steak and asparagus"></figure>
+                        <p class="blog__name text--medium text--black text--bold text--headFont">Popular Steak Cuts</p>
+                        <a href="">
+                            <p class="blog__more text--tiny text--red text--headFont text--bold">read more
+                            <i class="fas fa-angle-double-right"></i>
+                            </p>
+                        </a>
+                    </div>
 
-                <div class="blog__block blog__block2">
-                    <figure><img src="assets/image-13.jpeg" alt="a set dining table"></figure>
-                    <p class="blog__name text--medium text--black text--bold text--headFont">Reservations are Mooming!</p>
-                    <p class="blog__more text--tiny text--red text--headFont">read more <i class="fas fa-angle-double-right"></i></p>
-                </div>
+                    <div class="blog__block">
+                        <figure><img src="assets/image-13.jpeg" alt="a set dining table"></figure>
+                        <p class="blog__name text--medium text--black text--bold text--headFont">Reservations are Booming!</p>
+                        <a href="">
+                            <p class="blog__more text--tiny text--red text--headFont text--bold">read more <i class="fas fa-angle-double-right"></i></p></a>
+                    </div>
 
-                <div class="blog__block blog__block3">
-                    <figure><img src="assets/image-14.jpeg" alt="4 people saying cheers with wine glasses"></figure>
-                    <p class="blog__name text--medium text--black text--bold text--headFont">Wine Tasting Events</p>
-                    <p class="blog__more text--tiny text--red text--headFont">read more <i class="fas fa-angle-double-right"></i></p>
+                    <div class="blog__block">
+                        <figure><img src="assets/image-14.jpeg" alt="4 people saying cheers with wine glasses"></figure>
+                        <p class="blog__name text--medium text--black text--bold text--headFont">Wine Tasting Events</p>
+                        <a href="">
+                            <p class="blog__more text--tiny text--red text--headFont text--bold">read more
+                            <i class="fas fa-angle-double-right"></i>
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </section> <!-- end of blog section -->
         </main>
@@ -230,64 +264,79 @@
     <!-- FOOTER SECTION -->
 
         <footer>
-            <div class="footer__wrapper">
-                <div class="footer__contact">
-                    <h3 class="h3--white">contact</h3>
-                    <p class="footer__text text--small text--white">info@hackeryou.com</p>
-                    <p class="footer__text text--small text--white">123 - 456 - 7890</p>
-                    <p class="footer__text text--small text--white">Toronto, Ontario</p>
-                    <form action="">
-                        <input type="email" id="email" placeholder="your email">
-                        <label for="email" class="visuallyhidden">your email</label>
-                        <button></button>
-                    </form>
-                </div>
+            <div class="wrapper">
+                <div class="footer__content">
+                    <div class="footer__row">
+                        <div class="footer__contact footer__block">
+                            <h3 class="h3 text--white">contact</h3>
+                            <ul class="footer__text text__small">
+                                <a href="" class="footer__text text--small text--white">
+                                    <li><i class="far fa-envelope"></i>info@hackeryou.com</li>
+                                </a>
+                                <a href="" class="footer__text text--small text--white">
+                                    <li><i class="fas fa-phone"></i>123 - 456 - 7890</li>
+                                </a>
+                                <a href="" class="footer__text text--small text--white">
+                                    <li><i class="fas fa-map-marker-alt"></i>Toronto, Ontario</li>
+                                </a>
+                            </ul>
+                            <form action="">
+                                <input type="email" id="email" placeholder="your email">
+                                <label for="email" class="visuallyhidden">your email</label>
+                                <button class="text--darkGrey"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
 
-                <div class="footer__about">
-                    <h3 class="h3--white">about us</h3>
-                    <p class="footer__text text--small text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+                        <div class="footer__about footer__block">
+                            <h3 class="h3 text--white">about us</h3>
+                            <p class="footer__text text--small text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
 
-                <div class="footer__instagram">
-                    <h3 class="h3--white">instagram</h3>
-                    <div class="instagram__gallery">
-                        <img src="assets/image-15.jpeg" alt="">
-                        <img src="assets/image-16.jpeg" alt="">
-                        <img src="assets/image-17.jpeg" alt="">
-                        <img src="assets/image-18.jpeg" alt="">
-                        <img src="assets/image-19.jpeg" alt="">
-                        <img src="assets/image-20.jpeg" alt="">
-                        <img src="assets/image-21.jpeg" alt="">
-                        <img src="assets/image-22.jpeg" alt="">
+                        <div class="footer__instagram footer__block">
+                            <h3 class="h3 text--white">instagram</h3>
+                            <div class="instagram__gallery">
+                                <img src="assets/image-15.jpeg" alt="">
+                                <img src="assets/image-16.jpeg" alt="">
+                                <img src="assets/image-17.jpeg" alt="">
+                                <img src="assets/image-18.jpeg" alt="">
+                                <img src="assets/image-19.jpeg" alt="">
+                                <img src="assets/image-20.jpeg" alt="">
+                                <img src="assets/image-21.jpeg" alt="">
+                                <img src="assets/image-22.jpeg" alt="">
+                            </div>
+                        </div> <!-- end of instagram  -->
                     </div>
-                </div> <!-- end of instagram  -->
-            </div> <!-- end of footerContentWrap -->
 
-            <nav class="nav__footer">
-                <div class="logo logo__footer"></div>
-                <ul>
-                    <li class="list"><a href="" class="text--white">home</a></li>
-                    <li class="list"><a href="" class="text--white">menu</a></li>
-                    <li class="list"><a href="" class="text--white">blog</a></li>
-                    <li class="list"><a href="" class="text--white">contact</a></li>
-                    <li class="list"><a href="">about us</a></li>
-                </ul>
-            </nav>
+                    <nav class="nav__footer">
+                        <div class="logo logo__footer text--white"><h2>Restaurant</h2></div>
+                        <ul>
+                            <li class="list"><a href="" class="text--white">home</a></li>
+                            <li class="list"><a href="" class="text--white">menu</a></li>
+                            <li class="list"><a href="" class="text--white">blog</a></li>
+                            <li class="list"><a href="" class="text--white">contact</a></li>
+                            <li class="list"><a href="" class="text--white">about us</a></li>
+                        </ul>
+                    </nav>
 
-            <aside>
-                <div class="footer__icons">
-                    <a href=""><span class="visuallyhidden">facebook</span><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><span class="visuallyhidden">twitter</span><i class="fab fa-twitter"></i></a>
-                    <a href=""><span class="visuallyhidden">instagram</span><i class="fab fa-instagram"></i></a>
+                    <div class="footer__end text--white">
+                        <p>2018 all rights reserved </p>
+                    </div>
                 </div>
+            </div><!-- end of footer wrapper -->
+
+            <aside class="footer__icons">
+            
+                <a href=""><span class="visuallyhidden">facebook</span><i class="fab fa-facebook"></i></a>
+                <a href=""><span class="visuallyhidden">instagram</span><i class="fab fa-instagram"></i></a>
+                <a href=""><span class="visuallyhidden">pinterest</span><i class="fab fa-pinterest-p"></i></a>
+                
+                
             </aside>
 
-            <div class="footer__end">
-                <p>2018 all rights reserved </p>
-            </div>
+            
         </footer>
-    </div> <!-- end of wrapper -->
+    
     
     
 </body>

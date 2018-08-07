@@ -1,5 +1,16 @@
 html {
-    font-size: 18px;
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    width: 65%;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 // headers
@@ -33,7 +44,16 @@ h2 {
 
 }
 
+.subheaders {
+    margin-top: 90px;
+    margin-bottom: 72px;
+}
+
 // sizes
+
+.text__xlarge {
+    font-size: 1.4rem;
+}
 
 .text--large {
     font-size:1.2rem;
@@ -77,6 +97,7 @@ h2 {
 
 p {
     font-family: $textFont;
+    line-height: 30px;
 }
 
 .text--headFont {
@@ -91,4 +112,21 @@ p {
 
 .tag {
     border-radius: 500px;
+    color: white;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    p {
+        margin: 8px 22px;
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+        }
+}
+
+@media (max-width: 1313px) {
+    html {
+        font-size: 16px;
+    }
 }

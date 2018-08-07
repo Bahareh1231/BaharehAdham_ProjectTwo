@@ -1,0 +1,24 @@
+.services {
+    padding-bottom: 78px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.services__content {
+    display: flex;
+    flex-wrap: wrap;
+    .servicesBlock {
+        width: 50%;
+    }
+    .servicesBlock__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+    }
+}

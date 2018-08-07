@@ -1,0 +1,30 @@
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 78px;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+            width: 70%;
+            text-align: center;
+            font-size: 0.9rem;
+            font-family: $textFont;
+            border-bottom: 1px solid $black;
+            padding-bottom: 10px;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+        }
+        .tag__button {
+            background-color: $red;
+            border: none;
+            padding: 8px 22px;
+            margin: 30px;
+
+        }
+    }
+}

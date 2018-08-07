@@ -12,10 +12,18 @@ $textFont: "Lora";
 
 // mixins
 
-@mixin font ($size, $family, $transform) {
+@mixin font($size, $family, $transform) {
     font-size: $size;
     font-family: $family;
     text-transform: $transform;
+}
+
+@mixin position($type, $top, $right, $bottom, $left) {
+    position: $type;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
 }
 
 
