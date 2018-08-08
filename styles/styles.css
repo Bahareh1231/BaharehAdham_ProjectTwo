@@ -321,6 +321,11 @@ header {
 .tag__header {
   background-color: #da331d; }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */
+  header {
+    background-attachment: scroll; } }
+
 @media (max-width: 1000px) {
   .header__nav {
     -webkit-box-orient: vertical;

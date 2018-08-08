@@ -67,6 +67,14 @@ header {
 
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */ 
+  header {
+      background-attachment: scroll;
+  }
+}
+
+
 @media (max-width: 1000px) {
     .header__nav {
         flex-direction: column;
