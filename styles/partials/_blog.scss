@@ -11,6 +11,10 @@
     a {
         text-decoration: none;
         text-transform: uppercase;
+        &:hover .text--tiny {
+            font-size: 0.8rem;
+            text-decoration: underline;
+        }
     }
     p {
         margin: 11px 0;
@@ -31,5 +35,10 @@
 
     .blog__block {
         width: calc(100% - 20px);
+        img {
+            width: 100%;
+        }
     }
 }
+
+

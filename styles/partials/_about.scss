@@ -4,9 +4,6 @@
     align-items: center;
     text-align: center;
     padding-bottom: 5%;
-    h2 {
-        margin: 5%;
-    }
     .about__content {
         display: flex;
         justify-content: space-between;
@@ -43,10 +40,29 @@
 
     .about__gallery {
         width: 60%;
+        margin: 0;
     }
 
     .about__text {
         width: 100%;
     }
 
+}
+
+@media (max-width: 780px) {
+    .about__gallery {
+        width: 70%;
+    }
+}
+
+@media (max-width: 630px) {
+    .about__gallery {
+        width: 80%;
+    }
+}
+
+@media (max-width: 570px) {
+    .about__gallery {
+        width: 100%;
+    }
 }

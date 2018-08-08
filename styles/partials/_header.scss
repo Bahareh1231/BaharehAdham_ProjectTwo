@@ -6,6 +6,10 @@ header {
     background-attachment: fixed;
     background-position: right;
     height: 100vh;
+    input {
+        display: none;
+    }
+    
 }
 
 .header__nav {
@@ -17,10 +21,28 @@ header {
         margin-top: 43px;
         flex-basis:60%;
         flex-shrink: 1;
+        a:hover {
+            border-top: 2px solid $darkGrey;
+            border-bottom: 2px solid $darkGrey;
+            padding: 5px 0;
+        }
     }
     .logo {
         flex-shrink: 2;
     }
+    label {
+        display: none;
+        i {
+            color: white;
+            font-size: 2.5rem;
+            transition: all 1s;
+            &:hover {
+                transform: scale(1.12);
+
+            }
+        }
+    }
+    
 
 }
 
@@ -30,6 +52,10 @@ header {
     padding-bottom: 10%;
     h1 {
         margin-bottom: 0;
+        text-shadow: 0 0 1px black;
+    }
+    h3 {
+        text-shadow: 0 0 1px black;
     }
 }
 .tag__header {
@@ -46,11 +72,41 @@ header {
             margin-top: 0;
         }
     }
+}
 
-    header {
+@media (max-width: 570px) {
+    
+    .header__nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        ul.nav__list {
+            display: none;
+            padding-left: 0;
+            flex-direction: column;
+            align-items: flex-end;
+            flex: 1 0 100%;
+            li {
+                padding: 10px;
+            }
+        }
+        label {
+            display: block;
+        }
+        input#toggle:checked + ul.nav__list {
+            display: flex;
+            position: absolute;
+            top: 84px;
+            right: -12px;
+        }
+        
+    }
 
+    .header__title {
+        padding-top: 40%;
     }
 }
+
 
 
 

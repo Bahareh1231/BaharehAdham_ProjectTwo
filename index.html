@@ -17,16 +17,24 @@
     <!-- HEADER SECTION -->
 
         <header>
+           
+
             <div class="wrapper"> <!-- navigation section -->
                 <!-- logo and navigation -->
+                
                 <nav class="header__nav">
                     <div class="logo logo__nav text--white"><h2>restaurant</h2></div>
+
+                    <label for="toggle">
+                        <i class="fa fa-bars"></i></label> <!-- label for mobile nav hiding -->
+                    <input type="checkbox" id="toggle" name="toggle">
+                    <!-- input for mobile nav hiding -->
                     <ul class="nav__list text--white">
                         <li class="list"><a href="" class="text--white">menu</a></li>
-                        <li class="list"><a href="" class="text--white">blog</a></li>
+                        <li class="list"><a href="#blog" class="text--white">blog</a></li>
                         <li class="list"><a href="" class="text--white">home</a></li>
-                        <li class="list"><a href="" class="text--white">contact</a></li>
-                        <li class="list"><a href="" class="text--white">about us</a></li>
+                        <li class="list"><a href="#contact" class="text--white">contact</a></li>
+                        <li class="list"><a href="#about" class="text--white">about us</a></li>
                     </ul>
                 </nav>
 
@@ -44,7 +52,7 @@
         <main>
 
     <!-- ABOUT SECTION -->
-            <section class="about">
+            <section class="about #about">
                 <div class="wrapper">
                     <h2 class="subheaders text--black">We are...</h2>
                     
@@ -113,17 +121,17 @@
                     <h2 class="subheaders  text--black">services</h2>
                     <div class="services__content">
 
-                        <div class="servicesBlock servicesBlock__text">
+                        <div class="servicesBlock servicesBlock__text servicesBlock__top--text">
                             <h3 class="h3--black">custom catering</h3>
                             <p class="text--small text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud.</p>
                         </div>
     
-                        <img src="assets/image-6.jpeg" class="servicesBlock" alt="view of a restaurant's bar">
+                        <img src="assets/image-6.jpeg" class="servicesBlock servicesBlock__top--pic" alt="view of a restaurant's bar">
 
-                        <img src="assets/image-7.jpeg" class="servicesBlock" alt="a plate of salmon and vegetables">
+                        <img src="assets/image-7.jpeg" class="servicesBlock servicesBlock__bottom--pic" alt="a plate of salmon and vegetables">
 
-                        <div class="servicesBlock servicesBlock__text">
+                        <div class="servicesBlock servicesBlock__text servicesBlock__bottom--text">
                             <h3 class="h3--black">event bookings</h3>
                             <p class="text--small text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud.</p>
@@ -188,7 +196,7 @@
             </section> <!-- end of events section -->
 
         <!-- QUESTION SECTION -->
-            <section class="question">
+            <section class="question #contact">
                 <div class="wrapper">
                     <h2 class="subheaders">ask a question</h2>
                     <form action="">
@@ -203,22 +211,22 @@
         <!-- STATISTICS SECTION -->
             <section class="stats">
                 <div class="wrapper stats__content">
-                    <div class="stats__block">
+                    <div class="stats__block check">
                         <i class="fas fa-check-square"></i>
                         <p class="stats__number text--xlarge text--bold text--headFont">16</p>
                         <p class="stats__text text--black text--large">Years Open</p>
                     </div>
-                    <div class="stats__block">
+                    <div class="stats__block smile">
                         <i class="fas fa-smile"></i>
                         <p class="stats__number text--xlarge text--bold text--headFont">180</p>
                         <p class="stats__text text--black text--large">Happy Customers</p>
                     </div>
-                    <div class="stats__block">
+                    <div class="stats__block calendar">
                         <i class="fas fa-calendar"></i>
                         <p class="stats__number text--xlarge text--bold text--headFont">12</p>
                         <p class="stats__text text--black text--large">World Class Cooks</p>
                     </div>
-                    <div class="stats__block">
+                    <div class="stats__block trophy">
                         <i class="fas fa-trophy"></i>
                         <p class="stats__number text--xlarge text--bold text--headFont">55</p>
                         <p class="stats__text text--black text--large">Awards</p>
@@ -227,7 +235,7 @@
             </section> <!-- end of stats section -->
 
         <!-- BLOG SECTION -->
-            <section class="blog">
+            <section class="blog #blog">
                 <h2 class="subheaders">our blog</h2>
 
                 <div class="blogWrapper">
@@ -320,16 +328,16 @@
                     </nav>
 
                     <div class="footer__end text--white">
-                        <p>2018 all rights reserved </p>
+                        <p>2018 all rights reserved ©</p>
                     </div>
                 </div>
             </div><!-- end of footer wrapper -->
 
             <aside class="footer__icons">
             
-                <a href=""><span class="visuallyhidden">facebook</span><i class="fab fa-facebook"></i></a>
-                <a href=""><span class="visuallyhidden">instagram</span><i class="fab fa-instagram"></i></a>
-                <a href=""><span class="visuallyhidden">pinterest</span><i class="fab fa-pinterest-p"></i></a>
+                <a href="" class="facebook"><span class="visuallyhidden">facebook</span><i class="fab fa-facebook"></i></a>
+                <a href="" class="insta"><span class="visuallyhidden">instagram</span><i class="fab fa-instagram fa-gradient"></i></a>
+                <a href="" class="pinterest"><span class="visuallyhidden">pinterest</span><i class="fab fa-pinterest-p"></i></a>
                 
                 
             </aside>
