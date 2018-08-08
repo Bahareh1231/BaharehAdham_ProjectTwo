@@ -8,9 +8,6 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    i {
-        margin-right: 10px;
-    }
     .footer__icons {
         display: flex;
         flex-direction: column;
@@ -26,11 +23,15 @@ footer {
         }
         .facebook:hover {
             color: rgb(90, 119, 182);
+            padding: 0;
         }
-        .insta:hover .fa-gradient {
-            background-clip: text;
-            background: linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-            border-radius: 20%;
+        .insta  {
+            display:flex;
+             justify-content:center;
+            font-size:1.5rem;
+            &:hover svg *{
+                fill: url(#rg);
+            }
         }
         .pinterest:hover {
             color: #C91518;
@@ -47,9 +48,9 @@ footer {
         ul {
             padding: 0;
             line-height: 30px;
-        }
-        a {
-            text-decoration: none;
+            svg {
+                margin-right: 20px;
+            }
         }
         form {
             position: relative;
@@ -119,6 +120,10 @@ footer {
     font-size: 0.7rem;
 }
 
+aside {
+    margin-right: 30px;
+}
+
 @media (max-width: 1080px) {
     .footer__row {
         justify-content: center;
@@ -150,13 +155,19 @@ footer {
     }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 740px) {
     .footer__row {
         .footer__about p {
             line-height: 20px;
         }
         .footer__instagram {
             width: 80%;
+        }
+        .footer__contact {
+            width: calc(50% - 20px);
+            form button {
+                left: 165px;
+            }
         }
     }
 
@@ -167,6 +178,7 @@ footer {
         .footer__instagram {
             display: none;
         }
+        
     }
 }
 
@@ -182,7 +194,7 @@ footer {
         .footer__contact {
             width: 100%;
             form button {
-                left: 226px;
+                left: 215px;
             }
         }
     }
@@ -193,5 +205,11 @@ footer {
             flex-direction: row;
             order: -1;
         }
+    }
+}
+
+@media (max-width: 500px) {
+    .nav__footer ul {
+        flex-wrap: wrap;
     }
 }

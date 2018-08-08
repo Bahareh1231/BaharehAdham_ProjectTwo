@@ -52,7 +52,7 @@
         <main>
 
     <!-- ABOUT SECTION -->
-            <section class="about #about">
+            <section class="about" id="about">
                 <div class="wrapper">
                     <h2 class="subheaders text--black">We are...</h2>
                     
@@ -196,7 +196,7 @@
             </section> <!-- end of events section -->
 
         <!-- QUESTION SECTION -->
-            <section class="question #contact">
+            <section class="question" id="contact">
                 <div class="wrapper">
                     <h2 class="subheaders">ask a question</h2>
                     <form action="">
@@ -235,37 +235,39 @@
             </section> <!-- end of stats section -->
 
         <!-- BLOG SECTION -->
-            <section class="blog #blog">
-                <h2 class="subheaders">our blog</h2>
+            <section class="blog" id="blog">
+                <div class="wrapper">
+                    <h2 class="subheaders">our blog</h2>
 
-                <div class="blogWrapper">
-                    <div class="blog__block">
-                        <figure><img src="assets/image-12.jpeg" alt="plate of steak and asparagus"></figure>
-                        <p class="blog__name text--medium text--black text--bold text--headFont">Popular Steak Cuts</p>
-                        <a href="">
-                            <p class="blog__more text--tiny text--red text--headFont text--bold">read more
-                            <i class="fas fa-angle-double-right"></i>
-                            </p>
-                        </a>
-                    </div>
+                    <div class="blogWrapper">
+                        <div class="blog__block">
+                            <figure><img src="assets/image-12.jpeg" alt="plate of steak and asparagus"></figure>
+                            <p class="blog__name text--medium text--black text--bold text--headFont">Popular Steak Cuts</p>
+                            <a href="">
+                                <p class="blog__more text--tiny text--red text--headFont text--bold">read more
+                                <i class="fas fa-angle-double-right"></i>
+                                </p>
+                            </a>
+                        </div>
 
-                    <div class="blog__block">
-                        <figure><img src="assets/image-13.jpeg" alt="a set dining table"></figure>
-                        <p class="blog__name text--medium text--black text--bold text--headFont">Reservations are Booming!</p>
-                        <a href="">
-                            <p class="blog__more text--tiny text--red text--headFont text--bold">read more <i class="fas fa-angle-double-right"></i></p></a>
-                    </div>
+                        <div class="blog__block">
+                            <figure><img src="assets/image-13.jpeg" alt="a set dining table"></figure>
+                            <p class="blog__name text--medium text--black text--bold text--headFont">Reservations are Booming!</p>
+                            <a href="">
+                                <p class="blog__more text--tiny text--red text--headFont text--bold">read more <i class="fas fa-angle-double-right"></i></p></a>
+                        </div>
 
-                    <div class="blog__block">
-                        <figure><img src="assets/image-14.jpeg" alt="4 people saying cheers with wine glasses"></figure>
-                        <p class="blog__name text--medium text--black text--bold text--headFont">Wine Tasting Events</p>
-                        <a href="">
-                            <p class="blog__more text--tiny text--red text--headFont text--bold">read more
-                            <i class="fas fa-angle-double-right"></i>
-                            </p>
-                        </a>
+                        <div class="blog__block">
+                            <figure><img src="assets/image-14.jpeg" alt="4 people saying cheers with wine glasses"></figure>
+                            <p class="blog__name text--medium text--black text--bold text--headFont">Wine Tasting Events</p>
+                            <a href="">
+                                <p class="blog__more text--tiny text--red text--headFont text--bold">read more
+                                <i class="fas fa-angle-double-right"></i>
+                                </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </div> <!-- end of wrapper -->
             </section> <!-- end of blog section -->
         </main>
 
@@ -278,15 +280,15 @@
                         <div class="footer__contact footer__block">
                             <h3 class="h3 text--white">contact</h3>
                             <ul class="footer__text text__small">
-                                <a href="" class="footer__text text--small text--white">
+                                <div class="footer__text text--small text--white">
                                     <li><i class="far fa-envelope"></i>info@hackeryou.com</li>
-                                </a>
-                                <a href="" class="footer__text text--small text--white">
+                                </div>
+                                <div class="footer__text text--small text--white">
                                     <li><i class="fas fa-phone"></i>123 - 456 - 7890</li>
-                                </a>
-                                <a href="" class="footer__text text--small text--white">
+                                </div>
+                                <div class="footer__text text--small text--white">
                                     <li><i class="fas fa-map-marker-alt"></i>Toronto, Ontario</li>
-                                </a>
+                                </div>
                             </ul>
                             <form action="">
                                 <input type="email" id="email" placeholder="your email">
@@ -335,9 +337,32 @@
 
             <aside class="footer__icons">
             
-                <a href="" class="facebook"><span class="visuallyhidden">facebook</span><i class="fab fa-facebook"></i></a>
-                <a href="" class="insta"><span class="visuallyhidden">instagram</span><i class="fab fa-instagram fa-gradient"></i></a>
-                <a href="" class="pinterest"><span class="visuallyhidden">pinterest</span><i class="fab fa-pinterest-p"></i></a>
+                <a href="" class="facebook">
+                    <span class="visuallyhidden">facebook</span>
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="" class="insta">
+                    <span class="visuallyhidden">instagram</span>
+                    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+                    <svg width="0" height="0">
+                        <radialGradient id="rg" r="150%" cx="30%" cy="107%">
+                            <stop stop-color="#fdf497" offset="0" />
+                            <stop stop-color="#fdf497" offset="0.05" />
+                            <stop stop-color="#fd5949" offset="0.45" />
+                            <stop stop-color="#d6249f" offset="0.6" />
+                            <stop stop-color="#285AEB" offset="0.9" />
+                        </radialGradient>
+                    </svg>
+                    <div class="insta__icon">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </a>
+                
+                <a href="" class="pinterest">
+                    <span class="visuallyhidden">pinterest</span>
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
                 
                 
             </aside>

@@ -1,7 +1,7 @@
 
 
 header {
-    background-image: url("../../assets/image-1.jpeg");
+    background-image: url("../assets/image-1.jpeg");
     background-size: cover;
     background-attachment: fixed;
     background-position: right;
@@ -21,20 +21,24 @@ header {
         margin-top: 43px;
         flex-basis:60%;
         flex-shrink: 1;
-        a:hover {
-            border-top: 2px solid $darkGrey;
-            border-bottom: 2px solid $darkGrey;
-            padding: 5px 0;
+        a {
+            text-shadow: 0 0 1px black;
+            &:hover {
+                border-top: 2px solid $darkGrey;
+                border-bottom: 2px solid $darkGrey;
+                padding: 5px 0;
+            }
         }
     }
     .logo {
         flex-shrink: 2;
+        text-shadow: 0 0 1px black;
     }
     label {
         display: none;
-        i {
+        svg {
             color: white;
-            font-size: 2.5rem;
+            font-size: 2rem;
             transition: all 1s;
             &:hover {
                 transform: scale(1.12);
@@ -75,7 +79,9 @@ header {
 }
 
 @media (max-width: 570px) {
-    
+    header {
+        background-position: 90%;
+    }
     .header__nav {
         flex-direction: row;
         flex-wrap: wrap;
@@ -104,6 +110,20 @@ header {
 
     .header__title {
         padding-top: 40%;
+    }
+}
+
+@media (max-width: 400px) {
+    
+
+    .header__title {
+        padding-top: 90%;
+    }
+
+    .header__nav {
+        label i {
+            font-size: 1.5rem;
+        }
     }
 }
 

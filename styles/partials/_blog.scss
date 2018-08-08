@@ -3,6 +3,11 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 78px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .blogWrapper {
         display: flex;
         justify-content: center;
@@ -13,8 +18,8 @@
         text-transform: uppercase;
         &:hover .text--tiny {
             font-size: 0.8rem;
-            text-decoration: underline;
         }
+        
     }
     p {
         margin: 11px 0;
